@@ -1,7 +1,10 @@
 function speedDetect (speed) {
+    // speedDetect is the function Name. The only parameter required is the speed.
     let points;
+    // These are the demerit points. the variable has been declared by the use of the keyword let.
     if (speed < 75) {
         points = 0
+    // I have used < because only when the speed reaches 75 will a demerit point be earned
     } else {
         if (speed < 80) {
             points = 1
@@ -38,8 +41,10 @@ function speedDetect (speed) {
                                                 } else {
                                                     if (speed < 135) {
                                                         points = 12
+                                                        // as the speed increases with intervals of 5, the demerits increase with intervals of 1.
                                                     } else {
                                                         points = 'Lisense suspended'
+                                                        // Any speed from 135 and above gets the driver's lisense suspended.
                                                     }
                                                 }
                                             }
