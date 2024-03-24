@@ -60,6 +60,8 @@ function speedDetect (speed) {
         }
     }
 return points;
+// Returns total demerit points earned
 }
 
 console.log(speedDetect());
+// Where the speed is input
